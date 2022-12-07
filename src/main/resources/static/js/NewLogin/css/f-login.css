@@ -1,0 +1,254 @@
+/*body { overflow-x: hidden;}*/
+a:hover { text-decoration: none;}
+/*======================================会员登录页面===========================================*/
+.f-memberlogin-wp { width: 100%;}
+/*头部*/
+.f-ml-header { width: 100%;}
+/*头部上边*/
+.f-ml-hd-top { width: 100%;height: 33px;background-color: rgb(234 , 234 , 234);}
+.f-ml-hd-title { width: 1180px;height: 33px;font-size: 13px;margin: 0 auto;}
+/*所在城市*/
+.f-ml-hd-city { width: 124px;height: 33px;color: #666666;line-height: 33px;}
+.f-icons-downarrow { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 8px;height: 8px;background-position: 0 0;float:right;margin:16px 19px 0 0px;}
+.f-ml-hd-ul { list-style: none;margin-left: 858px;line-height: 33px;}
+.f-ml-hd-ul li { float: left;margin: 0px 6px;}
+.f-ml-hd-ul li>a:hover { color: #d00;}
+/*头部下边*/
+.f-ml-hd-bottom { width: 100%;height: 131px;margin: 0 auto;}
+.f-ml-hd-logo {     width: 330px;height: 80px;margin-top: 25px;float: left;margin-left: 13px;}
+.f-ml-hd-text { width: 160px;height: 80px;color: #a0a0a0;font-size: 28px;font-weight: bold;line-height: 80px;padding-left: 30px; border-left: 1px solid #ccc;box-sizing: border-box;}
+/*头部样式结束*/
+
+/*内容*/
+.f-login-middle { width: 100%;background: url(/img/bg.png) no-repeat, -webkit-linear-gradient(-45deg, #48C8FF, #54B7FE);/*display: none;*/}
+.f-ml-middle-wp { width: 1180px;height: 590px;margin: 0 auto;position: relative;}
+.f-ml-img2 {margin: 150px 0 0 -53px;width: 676px;}
+/*图形验证码*/
+.f-ml-alterdiv,.f-ml-alternull { width: 130px;height: 50px;background-color: #000;opacity: 0.5;color: #fff;font-size: 16px;line-height: 50px;position: absolute;top: 220px;left: 610px;border-radius: 10px;text-align: center;display: none;}
+/*登录框*/
+.f-ml-middle-right { width: 385px;height: 480px;background-color: #fff;margin-top: 40px;}
+.f-ml-right-title { width: 325px;height: 30px;margin: 0 auto 18px;margin-top: 30px;}
+.f-ml-font-logo { color: #a0a0a0;font-size: 28px;font-weight: 400;line-height: 33px;}
+.f-ml-right-a { color: rgb(34 , 121 , 223);font-size: 15px;font-weight: 400;margin-top: 10px;}
+.f-icons-my { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 23px;background-position: -250px -24px;margin-left: 5px;}
+.f-icons-tele { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 21px;background-position: -210px -400px;margin-top: -1px;}
+
+.f-ml-int1,.f-ml-int2 { width: 325px;height: 37px;font-size: 10px;}
+.f-ml-int2 { margin-top: 29px;}
+/*验证码框*/
+.f-ml-int1>input { width: 28%;height: 100%;}
+.f-ml-int1>a { color: rgb(242 , 85 , 0);font-size: 14px;}
+.f-ml-int1a { line-height: 37px;}
+.f-ml-int1 img { padding-right: 5px;margin: 3px 0 0 50px;}
+/*获取验证码*/
+.f-ml-int2a { width: 100px;height: 27px;background-color: rgb(34 , 119 , 223);color: #fff;font-size: 15px;padding: 6px 15px;position: relative;top: -30px;left: 215px;}
+
+/*所有输入框*/
+.f-ml-input1,.f-ml-input2,.f-ml-input3,.f-ml-input4 { width: 325px;height: 37px;font-size: 10px;margin: 0 auto;}
+input { width: 99.5%;height: 100%;background-color: rgb(247 , 247 , 247);border: 1px solid rgb(201 , 201 , 201);font-size:13px;}
+/*输入正确图标*/
+.success,.successpw { width: 15px;height: 18px;}
+.f-ml-input1,.f-ml-input2 { position: relative;}
+.f-icons-on,.f-icons-on2  { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -55px;position:absolute;top:11px;right: 10px;display: none;}
+/*警告*/
+.f-ml-warn { width: 325px;height: 18px;margin: 6px auto 5px;}
+
+
+.l,.phoneCode {
+    float: left;
+    padding-left: 10px;
+}
+.f-ml-phone-warn,.f-ml-pass-warn { width: 325px;height: 18px;color: #f00;font-weight: 500;display: none;}
+.f-icons-phone,.f-icons-pass { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -90px;margin: -4px 4px 0 0;}
+/*验证码框*/
+.f-ml-input3>input { width: 28%;height: 100%;}
+.f-ml-input3>a { color: rgb(242 , 85 , 0);font-size: 14px;}
+.f-ml-inp3a { line-height: 37px;}
+.f-ml-input3 img { padding-right: 7px;margin: 3px 0 0 10px;}
+/*忘记密码*/
+.f-ml-input4 { margin-top: 18px;}
+.f-ml-input4>input { width: 5%;height: 100%;}
+.f-ml-checkbox { font-size: 15px;color: #666666;font-weight: 500;margin: 8px 0 0 8px;}
+.f-ml-input4>a { color: rgb(242 , 85 , 0);line-height: 37px;text-decoration: underline;}
+/*等录按钮*/
+.f-ml-submit-button { width: 325px;height: 40px;margin: 18px auto 0;}
+.f-ml-btn { width: 120px;height: 40px;color: #fff;font-size: 16px;background-color: rgb(34 , 119 , 223);border-radius: 5px;cursor: pointer;/*光标变为一只手*/}
+.f-ml-btn:nth-child(1) { background-color: rgb(219 , 82 , 0);margin-left: 21px;}
+.f-ml-btn:nth-child(2) { margin-left: 40px;}
+/*合作网站登录*/
+.f-ml-end { width: 325px;height: 96px;margin: 10px auto 0;}
+.f-ml-end-son1 { width: 325px;height: 76px;margin-top: 30px;border-top: 1px dashed #ccc;box-sizing: border-box;}
+.f-ml-end-son2 {
+    width: 120px;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    margin: -86px auto;
+}
+.f-icons-weixin,.f-icons-qq { text-align: center;}
+.f-icons-weixin { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -450px;display: inline-block;margin: 0px 0px 1px 107px;}
+.f-icons-qq { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -400px;display: inline-block;margin: 28px 0px 0px 32px;}
+
+
+/*============================================手机号登录页面=========================================*/
+/*内容*/
+.f-phonelogin-middle { width: 100%;background-color: rgb(34 , 119 , 223);display: none;}
+.f-pl-middle-wp { width: 1180px;height: 590px;margin: 0 auto;position: relative;}
+.f-pl-img2 { margin: 150px 0 0 124px;}
+/*图形验证码*/
+.f-pl-alterdiv,.f-pl-alternull { width: 130px;height: 50px;background-color: #000;opacity: 0.5;color: #fff;font-size: 16px;line-height: 50px;position: absolute;top: 220px;left: 610px;border-radius: 10px;text-align: center;display: none;}
+/*登录框*/
+.f-pl-middle-right { width: 385px;height: 480px;background-color: #fff;margin-top: 40px;}
+.f-pl-right-title { width: 325px;height: 30px;margin: 0 auto 18px;margin-top: 30px;}
+.f-pl-font-logo { color: #a0a0a0;font-size: 28px;font-weight: 400;line-height: 33px;}
+.f-pl-right-a { color: rgb(34 , 121 , 223);font-size: 15px;font-weight: 400;margin-top: 10px;}
+.f-plicons-my { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 23px;background-position: -250px -24px;margin-left: 5px;}
+.f-plicons-tele { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 21px;background-position: -210px -400px;margin-top: -1px;}
+
+.f-pl-int1,.f-pl-int2 { width: 325px;height: 37px;font-size: 10px;margin: 0 auto;}
+.f-pl-int2 { margin-top: 29px;}
+/*验证码框*/
+.f-pl-int1>input { width: 28%;height: 100%;}
+.f-pl-int1>a { color: rgb(242 , 85 , 0);font-size: 14px;}
+.f-pl-int1a { line-height: 37px;}
+.f-pl-int1 img { padding-right: 5px;margin: 3px 0 0 50px;}
+/*获取验证码*/
+.f-pl-int2a { width: 100px;height: 27px;background-color: rgb(34 , 119 , 223);color: #fff;font-size: 15px;padding: 10px 17px;position: relative;top: -30px;left: 215px;}
+
+/*所有输入框*/
+.f-pl-input1,.f-pl-input4{ width: 325px;height: 37px;font-size: 10px;margin: 0 auto;}
+input { width: 99.5%;height: 100%;background-color: rgb(247 , 247 , 247);border: 1px solid rgb(201 , 201 , 201);font-size:13px;}
+/*输入正确图标*/
+.pl-successpw { width: 15px;height: 18px;}
+.f-pl-input1 { position: relative;}
+.f-plicons-on { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -55px;position:absolute;top:11px;right: 10px;display: none;}
+/*警告*/
+.f-pl-warn { width: 325px;height: 18px;margin: 6px auto 5px;}
+.f-pl-phone-warn { width: 325px;height: 18px;color: #f00;font-weight: 500;display: none;}
+.f-plicons-phone { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -90px;margin: -4px 4px 0 0;}
+/*忘记密码*/
+.f-pl-input4 { margin-top: 18px;}
+.f-pl-input4>input { width: 10%;height: 100%;}
+.f-pl-checkbox { font-size: 15px;color: #666666;font-weight: 500;margin: 8px 0 0 -8px;}
+.f-pl-input4>a { color: rgb(242 , 85 , 0);line-height: 37px;text-decoration: underline;/*加上下划线*/}
+/*等录按钮*/
+.f-pl-submit-button { width: 325px;height: 40px;margin: 18px auto 0;}
+.f-pl-btn { width: 120px;height: 40px;color: #fff;font-size: 16px;background-color: rgb(34 , 119 , 223);border-radius: 5px;cursor: pointer;/*光标变为一只手*/}
+.f-pl-btn:nth-child(1) { background-color: rgb(219 , 82 , 0);margin-left: 21px;}
+.f-pl-btn:nth-child(2) { margin-left: 40px;}
+/*合作网站登录*/
+.f-pl-end { width: 325px;height: 96px;margin: 10px auto 0;}
+.f-pl-end-son1 { width: 325px;height: 76px;margin-top: 30px;border-top: 1px dashed #ccc;box-sizing: border-box;}
+.f-pl-end-son2 { color: #666;font-size: 16px;margin-top: -86px;text-align: center;}
+.f-plicons-weixin,.f-plicons-qq { text-align: center;}
+.f-plicons-weixin { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -450px;display: inline-block;margin: 0px 0px 1px 107px;}
+.f-plicons-qq { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -400px;display: inline-block;margin: 28px 0px 0px 32px;}
+
+
+
+/*============================================会员注册页面=========================================*/
+/*内容*/
+.f-registered-middle { width: 100%;background-color: rgb(34 , 119 , 223);display: none;}
+.f-r-middle-wp { width: 1180px;height: 665px;margin: 0 auto;position: relative;}
+.f-r-img2 { margin: 225px 0 0 124px;}
+/*图形验证码*/
+.f-r-alterdiv,.f-r-alternull { width: 130px;height: 50px;background-color: #000;opacity: 0.5;color: #fff;font-size: 16px;line-height: 50px;position: absolute;top: 280px;left: 610px;border-radius: 10px;text-align: center;display: none;}
+/*注册框*/
+.f-r-middle-right { width: 385px;height: 599px;background-color: #fff;margin-top: 40px;}
+
+ /*注册框头*/
+.f-r-right-title { width: 325px;height: 30px;margin: 0 auto 18px;margin-top: 30px;color: #a0a0a0;font-size: 28px;font-weight: 400;line-height: 33px;}
+
+/*所有输入框*/
+.f-r-input1,.f-r-input2,.f-r-input3,.f-r-input4,.f-r-input5 { width: 325px;height: 37px;font-size: 10px;margin: 0 auto;}
+input { width: 99.5%;height: 100%;background-color: rgb(247 , 247 , 247);border: 1px solid rgb(201 , 201 , 201);font-size:13px;}
+/*输入正确图标*/
+.r-success,.r-success2,.r-success3 { width: 15px;height: 18px;}
+.f-r-input1,.f-r-input2,.f-r-input3 { position: relative;}
+.f-ricons-on,.f-ricons-on2,.f-ricons-on3 { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -55px;position:absolute;top: 11px;right: 10px;display: none;}
+/*警告*/
+.f-r-warn { width: 325px;height: 18px;margin: 6px auto 5px;}
+.f-r-phone-warn,.f-r-pass-warn,.f-r-pass-warn2 { width: 325px;height: 18px;color: #f00;font-weight: 500;display: none;}
+.f-ricons-phone,.f-ricons-pass,.f-ricons-pass2 { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -90px;margin: -4px 4px 0 0;}
+/*验证码框*/
+.f-r-input4>input { width: 30%;height: 100%;}
+.f-r-input4>a { color: rgb(242 , 85 , 0);font-size: 14px;}
+.f-r-inp4a { line-height: 37px;}
+.f-r-input4 img { /*padding-right: 5px;margin: 3px 0 0 50px;*/}
+
+/*获取验证码*/
+.f-r-input5 { margin-top: 30px;background-color: yellow;}
+.f-r-input5a { width: 100px;height: 27px;background-color: rgb(34 , 119 , 223);color: #fff;font-size: 15px;padding: 6px 15px;position: relative;top: -30px;left: 215px;}
+
+/*阅读协议*/
+.f-r-input6 { width: 325px;height: 25px;margin: 18px auto 0;line-height: 25px;}
+.f-r-input6>input{ width: 8%;height: 100%;}
+.f-r-input6>a { font-size: 14px;text-decoration: none;}
+/*等录按钮*/
+.f-r-submit-button { width: 325px;height: 40px;margin: 18px auto 0;}
+.f-r-btn,.f-r-btn2 { width: 120px;height: 40px;color: #fff;font-size: 16px;border-radius: 5px;cursor: pointer;/*光标变为一只手*/}
+.f-r-btn { background-color: rgb(219 , 82 , 0);margin-left: 21px;}
+.f-r-btn2 { background-color: rgb(34 , 119 , 223);margin-left: 40px;}
+/*合作网站登录*/
+.f-r-end { width: 325px;height: 96px;margin: 10px auto 0;}
+.f-r-end-son1 { width: 325px;height: 76px;margin-top: 30px;border-top: 1px dashed #ccc;box-sizing: border-box;}
+.f-r-end-son2 { color: #666;font-size: 16px;margin-top: -86px;text-align: center;}
+.f-ricons-weixin,.f-ricons-qq { text-align: center;}
+.f-ricons-weixin { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -450px;display: inline-block;margin: 0px 0px 1px 107px;}
+.f-ricons-qq { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -400px;display: inline-block;margin: 28px 0px 0px 32px;}
+
+
+
+/*================================找回密码页面===============================*/
+/*内容*/
+.f-password-middle { width: 100%;background-color: rgb(34 , 119 , 223);display: none;}
+.f-p-middle-wp { width: 1180px;height: 665px;margin: 0 auto;position: relative;}
+.f-p-img2 { margin: 225px 0 0 124px;}
+/*图形验证码*/
+.f-p-alterdiv,.f-p-alternull { width: 130px;height: 50px;background-color: #000;opacity: 0.5;color: #fff;font-size: 16px;line-height: 50px;position: absolute;top: 280px;left: 610px;border-radius: 10px;text-align: center;display: none;}
+/*找回密码框*/
+.f-p-middle-right { width: 385px;height: 599px;background-color: #fff;margin-top: 40px;}
+
+ /*注册框头*/
+.f-p-right-title { width: 325px;height: 30px;margin: 0 auto 18px;margin-top: 30px;color: #a0a0a0;font-size: 28px;font-weight: 400;line-height: 33px;}
+
+/*所有输入框*/
+.f-p-input1,.f-p-input2,.f-p-input3,.f-p-input4,.f-p-input5 { width: 325px;height: 37px;font-size: 10px;margin: 0 auto;}
+input { width: 99.5%;height: 100%;background-color: rgb(247 , 247 , 247);border: 1px solid rgb(201 , 201 , 201);font-size:13px;}
+/*输入正确图标*/
+.p-success,.p-success2,.p-success3 { width: 15px;height: 18px;}
+.f-p-input1,.f-p-input2,.f-p-input3 { position: relative;}
+.f-picons-on,.f-picons-on2,.f-picons-on3 { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -55px;position:absolute;top: 11px;right: 10px;display: none;}
+/*警告*/
+.f-p-warn { width: 325px;height: 18px;margin: 6px auto 5px;}
+.f-p-phone-warn,.f-p-pass-warn,.f-p-pass-warn2 { width: 325px;height: 18px;color: #f00;font-weight: 500;display: none;}
+.f-picons-phone,.f-picons-pass,.f-picons-pass2 { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 15px;height: 18px;background-position: -252px -90px;margin: -4px 4px 0 0;}
+/*验证码框*/
+.f-p-input4>input { width: 28%;height: 100%;}
+.f-p-input4>a { color: rgb(242 , 85 , 0);font-size: 14px;}
+.f-p-inp4a { line-height: 37px;}
+.f-p-input4 img { padding-right: 5px;margin: 3px 0 0 50px;}
+
+/*获取验证码*/
+.f-p-input5 { margin-top: 30px;background-color: yellow;}
+.f-p-input5a { width: 100px;height: 27px;background-color: rgb(34 , 119 , 223);color: #fff;font-size: 15px;padding: 6px 15px;position: relative;top: -30px;left: 215px;}
+
+/*阅读协议*/
+.f-p-input6 { width: 325px;height: 25px;margin: 18px auto 0;line-height: 25px;}
+.f-p-input6>input{ width: 8%;height: 100%;}
+.f-p-input6>a { font-size: 14px;text-decoration: none;}
+/*等录按钮*/
+.f-p-submit-button { width: 325px;height: 40px;margin: 18px auto 0;}
+.f-p-btn,.f-p-btn2 { width: 120px;height: 40px;color: #fff;font-size: 16px;border-radius: 5px;cursor: pointer;/*光标变为一只手*/}
+.f-p-btn { background-color: rgb(219 , 82 , 0);margin-left: 21px;}
+.f-p-btn2 { background-color: rgb(34 , 119 , 223);margin-left: 40px;}
+/*合作网站登录*/
+.f-p-end { width: 325px;height: 96px;margin: 10px auto 0;}
+.f-p-end-son1 { width: 325px;height: 76px;margin-top: 30px;border-top: 1px dashed #ccc;box-sizing: border-box;}
+.f-p-end-son2 { color: #666;font-size: 16px;margin-top: -86px;text-align: center;}
+.f-picons-weixin,.f-picons-qq { text-align: center;}
+.f-picons-weixin { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -450px;display: inline-block;margin: 0px 0px 1px 107px;}
+.f-picons-qq { background: url(/js/NewLogin/img/icons.png)no-repeat;width: 40px;height: 40px;background-position: -160px -400px;display: inline-block;margin: 28px 0px 0px 32px;}
+
+

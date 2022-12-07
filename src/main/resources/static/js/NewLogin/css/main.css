@@ -1,0 +1,90 @@
+* {margin: 0;padding: 0;}
+/******************header******************/
+.header {border-bottom: 3px solid #008bdd;height: 210px;/*overflow:hidden;*/width: 100%;}
+.header a {color: #7a7a7a;text-decoration: none;}
+.header ul {list-style: none;}
+.header-top {background-color: #eee;height: 35px;width: 100%;}
+.header-top-content {height: 100%;margin: auto;width: 1180px;}
+.select-city {color: #666;float: left;font-size: 13px;line-height: 35px;}
+.quick-menu {display: flex;float: right;font-size: 13px;justify-content: space-between;line-height: 35px;width: 430px;}
+.quick-menu .line {color: #999;}
+.quick-menu a:hover {color: red}
+.header-middle {height: 130px;width: 100%;}
+.second a:hover{color:red}
+.header-middle-content {height: 79px;margin: auto;padding: 27px 0 24px;width: 1180px;}
+.header-middle-content>img {float: left;}
+.middle-search {height: 80px;float: left;margin-left: 235px;width: 500px;}
+.middle-search ul li {color: #666;float: left;}
+.middle-search .first li {font-size:16px ;line-height: 25px;padding: 0 10px;}
+.middle-search .first li:nth-of-type(1) {background-color: #008bdd;}
+.middle-search .first li:nth-of-type(1) a {color: white;}
+.middle-search div {display: flex;justify-content: space-between;height: 35px;margin-top: 25px;width: 100%;clear: both;}
+.middle-search div input {border: 2px solid #008bdd;box-sizing: border-box;font-size: 13px;height: 100%;outline: none;padding-left: 10px;width: 450px;}
+.middle-search div a{background-color: #008bdd;border: 2px solid #008bdd;box-sizing: border-box;height: 100%;padding: 8px 13px;width: 50px;}
+.middle-search .second li {color: #333;font-size: 12px;line-height: 20px;padding: 0 5px;}
+.middle-search .second li:nth-of-type(1) {color:black;font-weight:bold;}
+.middle-search .second .goods{display: none;}
+.shopwrap{display:flex;float: right;justify-content:space-between;padding-top:25px;position:relative;width: 255px;}
+.shopcarnum{display:none;height: 25px;left:215px;position: absolute;top: 10px;width: 25px;}
+.realnum{background-color:#ff6c00;border-radius:3px;color:#fff;line-height: 20px;text-align:center;width: 25px;}
+.shopangle{height: 0;border-left: 1px solid transparent;border-right: 7px solid transparent;border-top: 5px solid #ff6c00;margin-left:3px;width: 0;}
+.shopwrap li{background-color: #f9f9f9;border: 1px solid #d3d3d3;line-height: 35px;padding:0 15px;}
+.shopwrap li img{vertical-align: middle;}
+.shopwrap li span{font-size:14px;margin:0 5px;vertical-align: middle;}
+.header-bottom{height: 45px;width: 100%;}
+.header-bottom a:hover{color:#f60}
+.header-bottom-content{margin:auto;width: 1180px;}
+.all-class{background-color: #008bdd;float:left;line-height:45px;position:relative;text-align:center;width: 175px;}
+.all-class span{color:white;font-size:20px;vertical-align: middle;margin-right: 20px;}
+.all-class img{vertical-align: middle;}
+.all-class .drop-down-list{display:none;left:0;position: absolute;top:48px;width: 175px;z-index: 1000;}
+.all-class .drop-down-list>li{background-color:#4c4c4c;border-bottom: 1px solid #737373;width: 100%;}
+.all-class .drop-down-list>li:hover{background-color: #ff6c00;}
+.all-class .drop-down-list li span a{color: white; font-size: 16px;float: left;margin-left: 30px;}
+.all-class .drop-down-list li img{margin-left: 50px;}
+.drop-down-list li ul{background-color:rgba(0 ,0 ,0 ,0.5);display:none;height: 423px;left:175px;position:absolute;top:0px;width: 400px;}
+.all-class .drop-down-list li ul li{color:#fff;float: left;padding: 0 10px;}
+.all-class .drop-down-list li ul li a{color:#fff;}
+.all-class .drop-down-list li ul li a:hover{color:#ff6600;}
+.header-nav{display: flex;float: left;justify-content:space-between;margin-left: 80px;width: 615px;}
+.header-nav li{color:#676767;font-size:18px;line-height:45px;}
+.header-nav li:nth-of-type(1) a{color:#f60}
+.online{color:#676767;font-size:18px;float: right;line-height:45px;position: relative;}
+.header-service{background-color:#fff;border:1px solid #ccc;box-sizing:border-box;display:none;padding:0 15px;position:absolute;right:0;top:45px;width: 175px;z-index: 100;}
+.serviceangle{background-color:#fff;border-left:1px solid #ccc;border-top:1px solid #ccc;height: 10px;position: absolute;top:-6px;right:25px;width: 10px;transform: rotate(45deg);}
+.header-service li{background-color:#ff6c00;border-radius: 5px;line-height: 30px;margin-top: 10px;}
+.header-service li img{margin-left:30px;vertical-align: middle;}
+.header-service li span{font-size:14px;margin-left:10px;vertical-align: middle;}
+.header-img-wrap{margin-top:10px;width: 145px;}
+.header-img-wrap img{width: 100%;}
+/********行业分类箭头动画*********/
+.rotatef{-webkit-animation: rotatef 1s 1;animation-fill-mode: forwards;}
+.rotateb{-webkit-animation: rotateb 1s 1;animation-fill-mode: forwards;}
+@-webkit-keyframes rotatef{to{transform: rotate(-180deg);}}
+@-webkit-keyframes rotateb{from{transform: rotate(-180deg);}to{transform: rotate(0deg);}}
+/******************footer******************/
+.footer{height: 455px;width: 100%;}
+.footer ul{list-style: none;}
+.footer a{text-decoration: none;}
+.footer-top{background-color:#e2e2e2;width: 100%;}
+.footer-top-content{display:flex;height: 100%;justify-content:space-between;margin:auto;width:1180px}
+.footer-top-content li{line-height: 85px;}
+.footer-top-content li img,span{vertical-align: middle;}
+.footer-top-content span{color:#666;font-size: 20px;margin-left: 30px;}
+.footer-middle{height: 250px;width: 100%;}
+.footer-middle-content{height: 100%;margin:auto;padding:35px 0 40px;width: 1180px;}
+.footer-middle-content>img{float:left;margin-right: 80px;}
+.footer-twocode{height: 175px;float:left;width: 350px;}
+.footer-twocode>img:nth-of-type(1){margin-right: 30px;}
+.applylist{display:flex;justify-content:space-between;}
+.applylist li{height: 25px;line-height: 25px;text-align: center;width: 150px;}
+.applylist li:nth-of-type(2){margin-right: 20px;}
+.applylist li img,span{vertical-align: middle;}
+.applylist li span{color:#666;margin-left: 5px;}
+.footer-nav{border-left:1px solid #ccc;display:flex;float:right;justify-content:space-between;padding-left:30px;width: 480px;}
+.footer-nav ul li{color:#323333;font-weight:bolder;line-height: 35px;}
+.footer-nav ul li a{color:#737373;font-size:13px;}
+.footer-nav ul li a:hover{color: #008bdd;}
+.footer-bottom{border-top:1px solid #ccc;height: 75px;padding-top:40px;width: 100%;}
+.footer-bottom li{color:#999;font-size:14px;line-height:25px;text-align: center;}
+.footer-bottom li:nth-of-type(2){color:#26a8e5;font-size: 16px;}

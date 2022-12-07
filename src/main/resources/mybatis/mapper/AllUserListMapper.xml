@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhide.assist.mapper.AllUserListMapper">
+    <resultMap id="LoginUserInfo" type="com.zhide.assist.models.LoginUserInfo">
+        <result column="UserID" property="userId" />
+        <result column="UserName" property="userName"/>
+        <result column="Password" property="password" />
+        <result column="CanLogin" property="canLogin"/>
+        <result column="RowValue" property="rowValue"/>
+    </resultMap>
+    <select id="findUserInfoByAccount" resultType="loginUserInfo">
+       Select LoginCode as Account,LoginCode as LoginName,Password, UserID as UserID,UserName as UserName,CanLogin from tbLoginUser Where LoginCode=#{account}
+    </select>
+    <select id="findUserInfoByWxOpenID" resultType="loginUserInfo">
+        Select WxOpenID as Account,Password, UserID as UserID,UserName as UserName,CanLogin from tbLoginUser Where WxOpenID=#{account}
+    </select>
+    <select id="findUserInfoByQQOpenID" resultType="loginUserInfo">
+        Select QQOpenID as Account,Password, UserID as UserID,UserName as UserName,CanLogin from tbLoginUser Where QQOpenID=#{account}
+    </select>
+    <select id="findUserInfoByUserID" resultType="loginUserInfo">
+        select LoginCode as Account,LoginCode as LoginName,Password, UserID as UserID,UserName as UserName,CanLogin,RowValue from tbLoginUser where UserID=#{UserID}
+    </select>
+</mapper>

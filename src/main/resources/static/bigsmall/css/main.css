@@ -1,0 +1,10 @@
+/** {padding:0;margin:0;}*/
+/*body{ background:#D8E7FA;}*/
+/*ul,ol {list-style-type:none;}*/
+/*img{display:block;}*/
+/*#drag{width:400px;height:400px;position:relative;margin-bottom:15px;}*/
+/*#drag .simg{ width:400px;height:400px;position:relative;}*/
+#drag .simg img[src="/bigsmall/images/sprite-magnify.png"]{position:absolute;bottom:0;right:0;}
+#drag .simg .mov{width:150px;height:149px;background:url("/bigsmall/images/move.png");position:absolute;left:0px;top:0;cursor:move;display:none;}
+#drag .bigimg {width:400px;position:absolute;left:400px;bottom:0;overflow:hidden;display:none;}
+#drag .bigimg img{position:absolute;left:0px;top:0;}

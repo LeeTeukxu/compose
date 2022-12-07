@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhide.assist.mapper.MemoMapper">
+    <select id="getAllByIds" resultType="com.zhide.assist.models.tbMemo">
+        Select convert(varchar,ID) as mid,ProductID,CreateTime,
+        UpdateTime,Memo
+        from v_Memo Where ProductID in
+        <foreach collection="list" index="index" open="(" close=")" item="id" separator=",">
+            #{id}
+        </foreach>
+    </select>
+</mapper>
